@@ -1,0 +1,27 @@
+body{
+    align-content: center;
+}
+header {
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 30px;
+    padding-top: 10px;
+    color: coral;
+    font-weight: bold;
+}
+
+p1 {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+button {
+    height: 40px;
+    width: 80px;
+    color: rgb(240, 133, 133);
+}

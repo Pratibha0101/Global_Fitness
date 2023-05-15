@@ -1,0 +1,40 @@
+.forms{
+  background-image: url('https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/228611254/original/2d3a5b63d71ce48a313cb263db8a8f2fcaaabade/create-3d-gym-interior-design.png');
+width: 100%;
+}
+.name{
+  color: blue;
+}
+.password{
+  color: blue;
+}
+p1{
+  color: blue;
+  font-weight: bold;
+  margin: 10px;
+  background-color: azure;
+}
+
+h2 {
+  border: 1mm;
+  color: blue;
+}
+
+h3{
+  color: gray;
+}
+.button{
+  width: 200px;
+  height: 30px;
+  background-color: white;
+  color: aliceblue;
+}
+.forms{
+  align-self: center;
+  height: auto;
+  display: grid;
+  box-sizing: border-box;
+  border: 20px solid blue;
+ padding: 25mm;
+ 
+}

@@ -1,0 +1,29 @@
+body{
+    background-image: url('https://hips.hearstapps.com/hmg-prod/images/gymnasiumwandsworth-1666691383.jpg?crop=1xw:0.8439609902475619xh;center,top&resize=1200:*');
+}
+.registration{
+    background-image: url('https://thehustle.co/wp-content/uploads/2022/08/HS-News-Brief_2022-08-17T232801.881Z.png');
+  width: 40%;
+  align-items: center;
+  margin: 0;
+  }
+  h2{
+    border-radius: 3px;
+  }
+  .name{
+    background-color: skyblue;
+  }
+
+  .DOB{
+    background-color: burlywood;
+  }
+
+  .Email{
+    background-color: rgb(194, 239, 127);
+  }
+  .MedicalCondition{
+    background-color: pink;
+  }
+  .Contact{
+    background-color: rgb(196, 152, 238);
+  }
