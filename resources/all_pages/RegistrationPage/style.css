@@ -1,29 +1,62 @@
 body{
-    background-image: url('https://hips.hearstapps.com/hmg-prod/images/gymnasiumwandsworth-1666691383.jpg?crop=1xw:0.8439609902475619xh;center,top&resize=1200:*');
+  background-image: url("./regi-imgs/registerpagebg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fullb{
+ font-size: 20px;
+  top: 0;
+  right: 10;
+  margin: 0px 90px 0px 0px;
+  
+    background-image: url('/resources/images/registerpageimage.png');
 }
 .registration{
-    background-image: url('https://thehustle.co/wp-content/uploads/2022/08/HS-News-Brief_2022-08-17T232801.881Z.png');
-  width: 40%;
+ justify-content: space-between;
   align-items: center;
-  margin: 0;
+  margin: 0px 0px 0px 0px;
+  }
+  table{
+    width: 50%
   }
   h2{
     border-radius: 3px;
   }
   .name{
     background-color: skyblue;
+    margin-right: 12px;
   }
 
   .DOB{
     background-color: burlywood;
+    margin-right: 12px;
   }
 
   .Email{
     background-color: rgb(194, 239, 127);
+    margin-right: 12px;
   }
   .MedicalCondition{
+    margin-right: 12px;
     background-color: pink;
   }
-  .Contact{
+  .Contacts{
     background-color: rgb(196, 152, 238);
+    margin-right: 12px;
+  }
+
+  .Gender{
+    background-color: rgb(130, 232, 213);
+    margin-right: 12px;
+  }
+
+  .Weight{
+    background-color: rgb(247, 132, 155);
+    margin-right: 12px;
+  }
+
+  .Height{
+    background-color: rgb(126, 141, 241);
+    margin-right: 12px;
   }

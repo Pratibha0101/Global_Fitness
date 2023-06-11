@@ -6,44 +6,49 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="Stylesheet" href="C:\GlobalFitness_FinalProject\resources\all_pages\loginpage\style.css">
-  <div class="forms">
-  <form action="submission.html" method="POST">
-    <h2>Our Login Page</h2>
+  <link rel="Stylesheet" href="../loginpage/style.css">
+  <script>
+    function tested() {
+     var mynames = document.getElementById("name01").value;
+      localStorage.setItem("username01",mynames)
+    }
+  </script>
 </head>
 <br>
 
 <body>
   <div class="forms">
-  <h3>Login</h3>
-  <table>
+    <form action="../homePage/index.html" method="get">
+      <h2>Our Login Page</h2>
 
-    <section class="name">
-      <label for="name"><strong>Registered Name</strong></label>
-    </section>
-    <input type="text" name="name" id="name">
-    </section>
+  <div class="forms">
+    <h3>Login</h3>
+    <table>
 
-    <section class="password">
-      <label for="name"><strong>Password</strong></label>
-    </section>
-    <input type="text" name="name" id="name">
-    </section>
+      <section class="name01">
+        <label for="name"><strong>Registered Name</strong></label>
+      </section>
+      <input type="text" name="name" id="name01">
+      </section>
 
-
-    
-  </table>
-<br>
-<br>
-  <button class="button" type="button" style="color: blue;">Next</button>
-  <br>
-  <p1>New Member? Register Now</p1>
-  <button class="button" type="button"><a href="C:\GlobalFitness_FinalProject\resources\all_pages\RegistrationPage\index.html">Click to Register</a></button>
-  
-  
+      <section class="password">
+        <label for="name"><strong>Password</strong></label>
+      </section>
+      <input type="text" name="name" id="name">
+      </section>
+    </table>
+    <br>
+    <br>
+    <button class="button" type="button" style="color: blue"; onclick="tested()">Next</button>
   </form>
-</div>
-</div>
+    <br>
+    <p1>New Member? Register Now</p1>
+    <button class="button" type="button"><a
+        href="../RegistrationPage/index.html">Click to
+        Register</a></button>
+  </div>
+  </div>
+
 </body>
 
 </html>

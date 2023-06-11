@@ -1,27 +1,40 @@
-body{
-    align-content: center;
-}
-header {
-    font-size: 20px;
-    align-items: center;
-    justify-content: space-around;
-    display: flex;
-    margin-top: 30px;
-    padding-top: 10px;
-    color: coral;
-    font-weight: bold;
+* {
+    margin: 0%;
+    padding: 0%;
 }
 
-p1 {
-    font-size: 30px;
-    display: flex;
+body{
+    align-content: center;
+    background-color: black;
+}
+
+.bgimage{
+    background-size: cover;
     justify-content: center;
-    font-weight: bold;
+}
+
+.head {
+    color: rgba(200, 156, 46, 0.521);
+    margin-top: 30px;
+    display: flex;
+    font-size: 30px;
+    justify-content:space-around;
+    font-weight:300;
     font-family: Arial;
+    position: relative;
+}
+.welcome{
+    font-family: 'Arial Narrow';
+    font-size: 55px;
+    font-weight: bold;
+    color: black;
+    margin-top: 175px;
 }
 
 button {
     height: 40px;
     width: 80px;
-    color: rgb(240, 133, 133);
+    background-color: black;
+   color: darkgoldenrod;
+
 }

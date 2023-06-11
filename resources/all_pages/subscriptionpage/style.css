@@ -1,0 +1,37 @@
+html{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    
+}
+body{
+  
+    border: 5px solid;
+    height:680px;
+    
+}
+
+table{
+    border: 2px solid;
+    background-color: aquamarine;
+    width: 65%;
+    height: 300px;
+}
+
+th{
+    border: 2px solid;
+    text-align: center;
+    background-color: cadetblue;
+}
+
+td{
+    border: 2px solid;
+text-align: center;
+}
+
+.table-cont{
+    align-content: center;
+    background-image: url('C:\GlobalFitness_FinalProject\resources\images\nutritionimg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}

@@ -3,6 +3,8 @@ body{
     padding: 0;
 }
 .cover{
-    display: flex;
-    margin-left: 17%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 25px;
 }
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../toolspage/style.css">
+
+</head>
+
+<body>
+  <header>
+    <div>FITNESS CALCULATORS</div>
+    <nav>
+      <ul>
+        <li>
+          <div class="buttonBox">
+            <button class="button4"><a href="#">Choose Calculator</a></button>
+          </div>
+          <ul class="submenu">
+            <li><a href="#bmi-cont"><img src="./tools-imgs/bmi-logo.jpg" alt="" style="height: 50px;">BMI</a></li>
+            <li><a href="#"><img src="./tools-imgs/bmr-logo.jpg" alt="" style="height: 50px;">BMR</a></li>
+            <li><a href="#"><img src="./tools-imgs/calorie-logo.jpg" alt="" style="height: 50px;">Calorie</a></li>
+            <li><a href="#"><img src="./tools-imgs/tdee-logo.jpg" alt="" style="height: 50px;">TDEE</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+  <section class="content1" style="margin-top: 200px;">
+    <h1>FITNESS CALCULATORS</h1>
+    <p1 style="margin-top: 30px;">The fitness calculators help make your life easy!
+      <br>
+      Whether you want to calculate BMI, use the calorie calculator, workout your BMR using our BMR calculator,
+      <br>
+      or even figure out how much you should be lifting with our 1 rep max calculator?
+      <br> The fitness calculators have the
+      answer.
+      <br>
+      At Global Fitness, it's not just all about your virtual gym membership, we want to help you improve in all aspects
+      of your life, both inside and outside of the gym!
+      <br>
+      <br>
+      Find and click on the relevant fitness calculator above,
+      <br>enter your details and start using our fitness calculators to put your fitness first TODAY!
+    </p1>
+  </section>
+  <hr>
+  <section class="bmi-content"  id="bmi-cont" style="padding-top: 300px;">
+    <h1 style="padding-top: 0%; margin-top: 0%;">BMI Calculator</h1>
+    <h2>How Can You Calculate Your BMI?</h2>
+    <p>the body mass index (BMI) is a measure that uses your height and weight to work out if you are a healthy size and
+      calculate your BMI measurement.
+
+      <br>
+      Your BMI is found by dividing an adult's weight in kilograms by their height in metres squared. The resulting
+      number- usually between about 15-40 shows whether that person is underweight, a healthy weight, overweight or
+      obese.
+      <br>
+      For those aged 2 to 18, the BMI calculation doesn't just take into account their height and weight. Their age and
+      gender are incorporated into the equation as well.
+    </p>
+    <br>
+    <h2>BMI Ranges</h2>
+    <section class="bmi-part2">
+    <div class="bmi-content2">
+    <p>A healthy BMI is in the 18.5 to 24.9 range for the majority of adults. This is definitely the case in individuals
+      with a normal musculature. <br>
+      <div class="bmi-status" style="width: 40%;"> The ranges measure in at:
+        <div class="Underweight" style="background-color: rgb(108, 163, 235);">below 18.5: underweight </div>
+        <div class="Normal" style="background-color: rgb(87, 190, 111);">between 18.5 and 24.9: healthy weight</div>
+        <div class="Overweight" style="background-color: rgb(244, 244, 107);">between 25 and 29.9: overweight</div>
+        <div class="Obese" style="background-color: rgb(244, 166, 21);">between 30 and 39.9: obese</div>
+        <div class="severely-Obese" style="background-color: rgb(246, 59, 59);">over 40: severely obese</div>
+      </div>
+    </p>
+  </div>
+  <div class="container">
+    <div class="bmi-calculator">
+      <div class="input">
+        <label for="height">Height (cm):</label>
+        <input type="text" id="height" placeholder="Height in cm">
+      </div>
+      <div class="input">
+        <label for="weight">Weight (kg):</label>
+        <input type="text" id="weight" placeholder="Weight in kg">
+      </div>
+      <button type="submit" class="calculate">Check BMI</button>
+      <div class="result"></div>
+    </div>
+  </div>
+  </div>
+</section>
+<hr>
+    
+  </section>
+
+<script>
+  //SCRIPT FOR RESULT OF BMI CALCULATOR starts
+  // select the calculate button
+  var calculate = document.querySelector('.calculate');
+
+  // attach event listener to the button
+  calculate.addEventListener('click', findBMI);
+
+  // function to find the BMI
+  function findBMI() {
+    var height = +document.querySelector('#height').value;
+    var weight = +document.querySelector('#weight').value;
+    // check height & weight are a valid number
+    if (height <= 0 || weight <= 0 || isNaN(height) || isNaN(weight)) {
+      alert('Please fill all fields with valid numbers');
+      return;
+    }
+    // convert height to meters
+    height = height / 100;
+    var bmi = weight / (height * height);
+    showResult(bmi);
+  }
+
+  // function to show the result
+  function showResult(bmi) {
+    var result = document.querySelector('.result');
+    var bmiStatus;
+    if (bmi < 18.5) {
+      bmiStatus = 'Underweight';
+    } else if (bmi < 25) {
+      bmiStatus = 'Normal';
+    } else if (bmi < 30) {
+      bmiStatus = 'Overweight';
+    } else if(bmi < 40){
+      bmiStatus = 'Obese';
+    } else{
+      bmiStatus = 'severely-obese'
+    }
+    result.innerHTML = `<div class=${bmiStatus}>Your BMI is ${bmi.toFixed(2)} and you are ${bmiStatus}.</div>`;
+  }
+  //SCRIPT FOR RESULT OF BMI ends
+</script>
+
+
+
+</body>
+
+</html>
